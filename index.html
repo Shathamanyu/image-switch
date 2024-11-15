@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switching</title>
+    <style>
+        body {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(106, 102, 98);
+      }
+    </style>
+</head>
+<body>
+    <div id="ma">
+        <img id="im"><br>
+    <div id="m2">
+        <button id="ii1" onclick=i1()>One</button>&emsp;&emsp;
+        <button id="ii2" onclick=i2()>Two</button>&emsp;&emsp;
+        <button id="ii3" onclick=i3()>Three</button>
+    </div>
+    </div>
+    
+</body>
+<script>
+    // let b1 = document.getElementsByTagName("body");
+    // b1.style.backgroundcolour="orange";
+
+
+
+
+
+    let m = document.getElementById("ma");
+    m.style.border="2px solid transprent"
+    m.style.width="370px"
+
+
+
+    let m2 = document.getElementById("m2");
+    m2.style.display="flex";
+    m2.style.justifyContent="center"
+    m2.style.width="370px";
+
+    let b = document.getElementById("im");
+    b.style.height="240px";
+    b.style.width="370px";
+    b.style.boxShadow="1px 1px 40px"
+    b.setAttribute("src","./car.jpg");
+
+    function i1(){
+        b.setAttribute("src","./jimny.avif");
+    }
+    function i2(){
+        b.setAttribute("src","./Jeep.avif");
+    }
+    function i3(){
+        b.setAttribute("src","./Thar.avif");
+    }
+
+    let ii1 = document.getElementById("ii1");
+    let ii2 = document.getElementById("ii2");
+    let ii3 = document.getElementById("ii3");
+    ii1.style.background="white";
+    ii2.style.background="white";
+    ii3.style.background="white";
+    ii1.style.border="2px solid";
+    ii1.style.borderRadius="10px";
+    ii2.style.border="2px solid";
+    ii2.style.borderRadius="10px";
+    ii3.style.border="2px solid";
+    ii3.style.borderRadius="10px";
+    
+</script>
+</html>
